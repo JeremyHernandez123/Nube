@@ -14,8 +14,8 @@ generarNombreIComprova(){
   Random random = Random(); 
   int numeroAleatori = random.nextInt(100); 
   if(numeroAleatori.isEven){
-    print("EL nombre es primer: $numeroAleatori");
+    print("EL nombre no es primer: $numeroAleatori");
   } else {
-    print("EL nombre no es primer: $numeroAleatori"); 
+    print("EL nombre es primer: $numeroAleatori"); 
   }
 }

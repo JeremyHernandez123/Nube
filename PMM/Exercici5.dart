@@ -1,3 +1,4 @@
+
 main(){
 
 /*
@@ -9,12 +10,16 @@ Escriviu el codi que agafi aquesta llista i en faci una nova que inclogui només
 
 */ 
 
-var a = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]; 
-elementsParells(a); 
+var a = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100];
+var parells = [];  
+elementsParells(a, parells); 
 }
 
-elementsParells(a){
+void elementsParells(a, parells){
   for(var i = 0; i < a.length; i++){
-    if(a[i].isEven){print(a[i]);}
+    if (i % 2 == 0){
+      parells.add(i); 
+    }
   }
+  print(parells); 
 }
