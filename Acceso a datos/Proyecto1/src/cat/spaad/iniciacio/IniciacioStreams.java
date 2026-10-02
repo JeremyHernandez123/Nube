@@ -1,7 +1,6 @@
 package cat.spaad.iniciacio;
 
-import cat.spaad.tipusStreams.MetodesByteStreams;
-import cat.spaad.tipusStreams.MetodesCharacterStreams;
+import cat.spaad.tipusStreams.*;
 
 import java.io.IOException;
 
@@ -27,13 +26,30 @@ public class IniciacioStreams {
         }
     }
 
-    public static void provesBuffered(){
+    public static void provesBuffered() throws IOException{
+        MetodesBufferedStreams.llegeixLinia("src/benvinguda.dat");
+
+        String[] lnn = {"Hola paco", "Hola mari", "Hola carmen"};
+        MetodesBufferedStreams.escriuLinia("buferedText.txt", lnn);
 
     }
 
-    static void main(){
+    public static void provesData() throws IOException{
+        double[] dades = {2.4, 3.5, 4.6, 5.7};
+        MetodesDataStreams.escriuArray("dataStream.txt", dades);
+        MetodesDataStreams.llegeixArray("dataStream.txt");
+
+    }
+
+    public static void provesNumeros() throws IOException{
+        ContarNumeros.llegirNumeros("C:\\Users\\Alumne\\Documents\\DAM 2\\Acceso a datos\\Proyecto1\\src\\numeros.dat");
+    }
+
+    static void main() throws IOException {
         // provesByte();
         // provesCharacter();
-        provesBuffered();
+        // provesBuffered();
+        // provesData();
+        provesNumeros();
     }
 }
