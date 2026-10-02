@@ -1,17 +1,20 @@
-import 'dart:ffi';
+
+import 'dart:collection';
 
 class User{
   String _id; 
   String _nomComplet; 
-  double _saldo = 0.0; 
-  String correo; 
+  double _saldo; 
+  String correu; 
   bool esVIP default false; 
 
+  User.nou({required String id, required String nom, required String correu, double saldoInicial  = 0.0})
+  
   User(String _id, String _nomComplet, double _saldo, String correo, bool esVIP){
     this._id = _id; 
     this._nomComplet = _nomComplet; 
     this._saldo = _saldo; 
-    this.correo = correo; 
+    this.correu = correu; 
     this.esVIP = esVIP; 
   }
 
