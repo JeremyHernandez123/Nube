@@ -4,10 +4,18 @@
  */
 package exercicisUD1.Exercici7;
 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
 /**
  *
  * @author Alumne
  */
 public class Fill {
-    
+     public void main() throws Exception{
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));     
+        String frase = br.readLine(); 
+        int nparaules = frase.split("\\s+").length;
+        IO.println("El numero de paraules es: " + nparaules); 
+     }
 }

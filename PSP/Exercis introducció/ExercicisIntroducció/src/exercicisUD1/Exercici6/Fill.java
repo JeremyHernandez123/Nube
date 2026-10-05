@@ -18,7 +18,7 @@ public class Fill  {
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));     
     String frase = br.readLine(); 
     int nparaules = frase.split("\\s+").length;
-    IO.print(nparaules); 
+    IO.println("El numero de paraules es: " + nparaules); 
     }
 }
 
