@@ -15,10 +15,10 @@ import java.io.OutputStreamWriter;
  */
 public class Fill  {
     public void main() throws Exception{
-    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));     
-    String frase = br.readLine(); 
-    int nparaules = frase.split("\\s+").length;
-    IO.println("El numero de paraules es: " + nparaules); 
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));     
+        String frase = br.readLine(); 
+        int nparaules = frase.split("\\s+").length;
+        IO.println("El numero de paraules es: " + nparaules); 
     }
 }
 
