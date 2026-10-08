@@ -1,4 +1,12 @@
+clientManager\gui\MainScreen.class
+clientManager\gui\DialogAddClient$1.class
+clientManager\gui\DialogAddClient.class
+clientManager\gui\DialogReconfirmacio$1$1.class
 com\mycompany\firstapp\SecondaryScreen.class
-com\mycompany\firstapp\FirstApp.class
+clientManager\gui\DialogAddClient$1$1.class
 com\mycompany\firstapp\MainScreen$1.class
 com\mycompany\firstapp\MainScreen.class
+clientManager\dto\Client.class
+clientManager\gui\DialogReconfirmacio.class
+clientManager\gui\DialogReconfirmacio$1.class
+com\mycompany\firstapp\FirstApp.class
